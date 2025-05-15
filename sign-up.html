@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sign Up Blush & Bloom" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Blush &amp; Bloom</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar">
+      <a href="index.html" class="logo">Blush &amp; Bloom</a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="collection.html" class="nav-link">Collection</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="sign-up.html" class="nav-link active">Sign Up</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </header>
+
+    <!-- Sign-Up Form -->
+    <section class="contact fade-in">
+      <h2>Create Account</h2>
+      <form id="signup-form">
+        <div class="form-row">
+          <input type="text" id="fullName" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="password-wrapper">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password (min 8 chars)"
+            required
+          />
+          <label for="show-password" class="show-password">
+            <input type="checkbox" id="show-password" />
+            Show password
+          </label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p id="signup-message" class="form-message"></p>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

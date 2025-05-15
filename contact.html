@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Contact Blush & Bloom" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Blush &amp; Bloom</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="navbar">
+      <a href="index.html" class="logo">Blush &amp; Bloom</a>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="collection.html" class="nav-link">Collection</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="sign-up.html" class="nav-link">Sign Up</a>
+        <a href="login.html" class="nav-link">Login</a>
+      </nav>
+    </header>
+
+    <!-- Contact Form -->
+    <section class="contact fade-in">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea
+          id="message"
+          placeholder="Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Submit</button>
+        <p id="contact-feedback" class="form-message"></p>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
